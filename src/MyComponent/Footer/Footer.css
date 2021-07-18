@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 200px;
+    padding: 1rem;
+    background-color: rgb(44, 43, 39);
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+}
+.footer p{
+    color: #fff
+}

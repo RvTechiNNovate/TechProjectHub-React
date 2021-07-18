@@ -1,0 +1,27 @@
+
+.heading-animated {
+    margin-top: 100px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color:#f4f4f4;
+  }
+  .heading-animated p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+
+.span-typed-text {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    color: orange;
+  }
