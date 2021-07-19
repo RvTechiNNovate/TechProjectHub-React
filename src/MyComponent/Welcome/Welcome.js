@@ -4,6 +4,7 @@ import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import "./Welcome.css"
 
 export const Welcome = () => {
+ 
 
   const text = useTypewriter({
     words: ["Data Science", "Web Development",
@@ -11,16 +12,19 @@ export const Welcome = () => {
     loop:0,
     typeSpeed:200,
     delaySpeed:2000,
-    deleteSpeed:50,
-
   })
 
+
   return (
+    <>
     <div className='heading-animated'>
         <p>
-      <span>Welcome to the world of </span><span className="span-typed-text">{text} </span><span><Cursor /> Project</span>
+      <span>Welcome to the World of </span><span className="span-typed-text">{text} </span><span><Cursor /> Project</span>
       </p>
       
     </div>
+    
+    </>
   )
+
 }

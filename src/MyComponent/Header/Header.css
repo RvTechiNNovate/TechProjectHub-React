@@ -6,7 +6,7 @@
 }
 
 .App-logo-b {
-    height: 50px;
+    height: 60px;
     pointer-events: none;
     margin-top: 15px;
     alt: "ProjectTechHub";
@@ -72,22 +72,7 @@
   border-color: #003300
 }
 
-.navbar-inverse .navbar-brand {
-  color: #FFFFFF
-}
 
-.navbar-inverse .navbar-brand:hover {
-  color: #FFCC00
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: #FFFFFF
-}
-
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-  color: #FFCC00
-}
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.open>a,
@@ -142,7 +127,7 @@
 
 /* header style*/
 #header{
-	height: 25vh;
+	height: 100px;
 	opacity: 0.8;
 	background-color: white;
 	background-size: cover;
@@ -155,7 +140,7 @@
 
 .horizontal-list li{
 	display: inline-block;
-	margin: 0px 12px 12px 0px;
+	margin: 0px 20px 12px 0px;
 	font-weight:100;
 	font-size: 0.9rem;
 
@@ -200,4 +185,22 @@
 }
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.menu-bg{
+  background:aliceblue;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+
+@media screen and (max-width: 600px){
+  .App-logo-b {
+    height: 50px;
+    pointer-events: none;
+    margin-top: 15px;
+    alt: "ProjectTechHub";
+    
+  }
 }
