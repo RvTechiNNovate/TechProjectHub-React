@@ -8,7 +8,8 @@ import img5 from "./Images/computer_vision.png"
 import img6 from "./Images/cpp.png"
 import img7 from "./Images/android.png"
 import img8 from "./Images/idea.png"
-// import img9 from "./Images/data_science.png"
+import { Link } from 'react-router-dom'
+
 
 
 export const Container = () => {
@@ -32,88 +33,88 @@ export const Container = () => {
                 <div className="project-image-container project">
 
                     <img src={img1} />
-                    <a href="./datascience.html">
+                    <Link to="./CommingSoon">
                         <div className="project-detail">
 
                             {/* <p>
                                     "Data Science Project"
                                 </p> */}
                         </div>
-                    </a>
+                    </Link>
 
                 </div>
                 <div className="project-image-container">
                     <img src={img2} />
-                    <a href="./java.html">
+                    <Link to="/CommingSoon">
                         <div className="project-detail">
                             {/* <p>
                                         "Java Project"
                                     </p> */}
                         </div>
-                    </a>
+                    </Link>
 
                 </div>
                 <div className="project-image-container">
                     <img className="" src={img3} />
-                    <a href="./Python.html">
+                    <Link to="/PythonProjects">
                         <div className="project-detail">
                             {/* <p>
                             "Python Project"
 
                         </p> */}
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="project-image-container">
                     <img src={img4} />
-                    <a href="./web_development.html">
+                    <Link to="/CommingSoon">
                         <div className="project-detail">
                             {/* <p>
                                 "Web Development Project"
                             </p> */}
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="project-image-container">
                     <img src={img5} />
-                    <a href="computer_vision.html">
+                    <Link to="/CommingSoon">
                         <div className="project-detail">
                             {/* <p>
                                                     "Computer Vision Project"
                                                 </p> */}
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="project-image-container">
                     <img src={img6} />
-                    <a href="./cpp.html">
+                    <Link to="./CommingSoon">
                         <div className="project-detail">
                             {/* <p>
                                 "C++ Project"
                             </p> */}
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="project-image-container">
                     <img src={img7} />
-                    <a href="./android.html">
+                    <Link to="/CommingSoon">
                         <div className="project-detail">
                             {/* <p>
                                 "Android<br/> Project "
                             </p> */}
                         </div>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="project-image-container">
                     <img src={img8} />
-                    <a href="./idea.html">
+                    <Link to="/CommingSoon">
                         <div className="project-detail">
                             {/* <p>
                                 "Project Idea"
                             </p> */}
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

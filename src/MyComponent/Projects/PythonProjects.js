@@ -4,13 +4,6 @@ import { Link } from 'react-router-dom'
 
 export const PythonProjects = () => {
 
-    const Alert = (e) => {
-        e.preventDefault();
-        alert("title or desc is not be blank")
-
-    }
-
-
 
 
     return (
