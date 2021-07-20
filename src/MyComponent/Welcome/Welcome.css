@@ -25,3 +25,14 @@
     overflow: hidden;
     color: orange;
   }
+
+  @media (max-width:560px) {
+    .heading-animated p {
+      font-size: 2rem;
+    }
+    .span-typed-text {
+      font-size: 2rem;
+      
+    }
+    
+  }

@@ -1,7 +1,7 @@
 
 import { Header } from "./MyComponent/Header/Header"
 import { Footer } from "./MyComponent/Footer/Footer";
-import { Footer_social } from "./MyComponent/Footer/Footer_social";
+// import { Footer_social } from "./MyComponent/Footer/Footer_social";
 import { Welcome } from "./MyComponent/Welcome/Welcome";
 import { Container } from "./MyComponent/ProjectsHome/Container"
 import { About } from "./MyComponent/About/About"
@@ -60,7 +60,7 @@ function App() {
 
 
         </Switch>
-          <Footer_social />
+         
         <Footer />
       </div>
     </Router>

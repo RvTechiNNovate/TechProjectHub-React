@@ -21,7 +21,7 @@ export const Welcome = () => {
         <p>
       <span>Welcome to the World of </span><span className="span-typed-text">{text} </span><span><Cursor /> Project</span>
       </p>
-      
+       
     </div>
     
     </>
