@@ -4,9 +4,9 @@ import "./About.css"
 
 export const About = () => {
     return (
-        <div className="bg-color">
-
-            <section id="about">
+        <div className="bg-color" id="about">
+            
+            <section className="" id="about">
                 <h1 className="section-heading mb75px ">
                     <span className="header-name-icon ">
                         <i className="far fa-address-card " aria-hidden="true"></i>

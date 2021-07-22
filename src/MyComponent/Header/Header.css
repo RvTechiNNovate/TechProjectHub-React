@@ -8,10 +8,11 @@
 .App-logo-b {
     height: 60px;
     pointer-events: none;
+    
     margin-top: 15px;
     alt: "ProjectTechHub";
     
-  }
+  } 
 .navhover:hover{
 	color: cyan;
 
@@ -25,7 +26,8 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase
+  text-transform: uppercase;
+  cursor:pointer;
 }
 
 
@@ -143,6 +145,7 @@
 	margin: 0px 20px 12px 0px;
 	font-weight:100;
 	font-size: 0.9rem;
+  cursor: pointer;
 
 
 }

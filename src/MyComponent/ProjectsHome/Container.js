@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 export const Container = () => {
     return (
 
-        <div id="project">
+        <div id="project" id="project">
             <h1 className="section-heading mb75px">
                 <span className="header-name-icon">
                     <i className="fas fa-tasks"></i>

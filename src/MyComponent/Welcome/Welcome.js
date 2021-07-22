@@ -17,7 +17,7 @@ export const Welcome = () => {
 
   return (
     <>
-    <div className='heading-animated'>
+    <div className='heading-animated' id="welcome">
         <p>
       <span>Welcome to the World of </span><span className="span-typed-text">{text} </span><span><Cursor /> Project</span>
       </p>

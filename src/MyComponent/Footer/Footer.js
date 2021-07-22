@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
 
         <footer className="footer">
-
+ 
             
             <div className="container color">
             <div className="footer-logo">

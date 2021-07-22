@@ -1,12 +1,15 @@
 
 import { Header } from "./MyComponent/Header/Header"
 import { Footer } from "./MyComponent/Footer/Footer";
-// import { Footer_social } from "./MyComponent/Footer/Footer_social";
 import { Welcome } from "./MyComponent/Welcome/Welcome";
 import { Container } from "./MyComponent/ProjectsHome/Container"
 import { About } from "./MyComponent/About/About"
 import { PythonProjects } from "./MyComponent/Projects/PythonProjects"
 import { CommingSoon } from "./MyComponent/Projects/CommingSoon"
+import { Contact } from "./MyComponent/Contact/Contact"
+import { Team } from "./MyComponent/Team/Team";
+
+
 
 
 import {
@@ -32,7 +35,8 @@ function App() {
               <>
                 <Container />
                 <About />
-
+                <Team />
+                <Contact />
               </>)
           }}>
 
@@ -41,9 +45,9 @@ function App() {
 
 
           <Route exact path="/About">
-              
-                <About />
-                <Container />
+
+            <About />
+            <Container />
 
 
           </Route>
@@ -51,16 +55,17 @@ function App() {
             <Container />
           </Route>
           <Route exact path="/PythonProjects">
-          <PythonProjects/>
+            <PythonProjects />
           </Route>
           <Route exact path="/CommingSoon">
-          <CommingSoon/>
+            <CommingSoon />
           </Route>
 
 
 
         </Switch>
-         
+
+
         <Footer />
       </div>
     </Router>
