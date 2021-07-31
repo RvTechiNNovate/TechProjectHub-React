@@ -1,15 +1,21 @@
 import React from 'react'
 import Contact_img from "./Contact_img.png"
 import "./Contact.css"
+import "aos/dist/aos.css"
 
-export const Contact = () => {
+export const Contact = (props) => {
+    function getFormData(e){
+
+        e.preventDefault()
+    }
+
     return (
-        <section className="container Section" id="contact">
+        <section  data-aos="fade-up" className="container Section" id="contact">
 
-            <div className="left-div">
+            <div  className="left-div">
 
 
-                <h3>
+                <h3 className="noselect">
                     Get in Touch
                 </h3>
                 <p>
@@ -17,7 +23,7 @@ export const Contact = () => {
                     Our team will come back to you within a matter of hours to help you.
                 </p>
                 <div className="pad">
-                    <form>
+                    <form onSubmit={getFormData}>
                         {/* name and email */}
                         <div className="row">
                             <div className="width50">
@@ -41,7 +47,7 @@ export const Contact = () => {
                             <input type="text" name="name" placeholder="Subject.." />
                         </div>
                         <div className="row width100">
-
+{/* {Message} */}
 
                             <label className="">Message</label>
                             <input type="text" name="name" placeholder="Message.." />

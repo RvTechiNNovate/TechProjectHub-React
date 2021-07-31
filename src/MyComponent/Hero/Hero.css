@@ -1,0 +1,116 @@
+.herobg{
+    position: relative;
+    justify-content: center;
+    top:0;
+    left:0;
+    right:0;
+    object-fit:cover;
+    height: 100%;
+    width: 100% ;
+
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.bg-img{
+    /* background: linear-gradient(red, green) ; */
+    background-image: url("hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    
+
+}
+.blurehero{
+    background: rgb(37 50 249 / 20%); 
+    backdrop-filter: blur(2px); 
+    height: 100vh;
+    min-height:500px;
+    overflow: hidden;
+
+}
+
+.heading-animated {
+    padding-top: 200px;
+    height: auto;
+    padding-bottom: 30px;
+    background-color:#f4f4f400;
+
+  }
+  .heading-animated p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+  }
+ 
+  .heading-animated button{
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 18px;
+  }
+
+.span-typed-text {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    color: rgb(0, 60, 255);
+  }
+
+@media (max-width:560px) {
+    .heading-animated p {
+      font-size: 2rem;
+    }
+    .span-typed-text {
+      font-size: 2rem;
+      
+    }
+    .bg-img{
+        
+        height:100vh;
+    
+    }
+    .heading-animated {
+        padding-top: 150px;
+        
+    
+      }
+      .heading-animated button{
+        font-size:7px;
+        height: 30px;
+        width: 89px;
+      }
+
+    
+  }
+  
+  @media screen and (max-height: 500px){
+    .heading-animated p {
+      font-size: 1.5rem;
+    }
+    .span-typed-text {
+      font-size: 1.5rem;
+      
+    }
+    .heading-animated button{
+      font-size:7px;
+      height: 30px;
+      width: 89px;
+    }
+  }

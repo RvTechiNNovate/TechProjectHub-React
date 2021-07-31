@@ -1,75 +1,74 @@
-
 import { Header } from "./MyComponent/Header/Header"
 import { Footer } from "./MyComponent/Footer/Footer";
-import { Welcome } from "./MyComponent/Welcome/Welcome";
 import { Container } from "./MyComponent/ProjectsHome/Container"
 import { About } from "./MyComponent/About/About"
-import { PythonProjects } from "./MyComponent/Projects/PythonProjects"
-import { CommingSoon } from "./MyComponent/Projects/CommingSoon"
+import { PythonProjects } from "./MyComponent/ProjectsHome/PythonProjects"
+import { CommingSoon } from "./MyComponent/ProjectsHome/CommingSoon"
 import { Contact } from "./MyComponent/Contact/Contact"
 import { Team } from "./MyComponent/Team/Team";
-
-
-
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import { WebDev } from "./MyComponent/ProjectsHome/Webdev"
+import { Hero } from "./MyComponent/Hero/Hero";
+import { Pagenotfound } from "./MyComponent/Welcome/Pagenotfound";
+import React, { useEffect } from 'react'
+import { Switch, Route } from "react-router-dom";
+import Aos from "aos"
 
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }
+    , [])
 
   return (
-    <Router>
-      <div className="App">
 
-        <Header />
-        <Welcome />
+    <div className="">
 
-        <Switch>
-          <Route exact path="/" render={() => {
-            return (
-              <>
-                <Container />
-                <About />
-                <Team />
-                <Contact />
-              </>)
-          }}>
+      <Header />
+      <Switch>
+        <Route exact path="/" render={() => {
+          return (
+            <>
+              <Hero />
+              <Container />
+              <About />
+              <Team />
+              <Contact />
+            </>)
+        }}>
+        </Route>
 
-          </Route>
+        <Route exact path="/About">
+          <About />
+        </Route>
 
+        <Route exact path="/Projects">
+          <Container />
+        </Route>
 
+        <Route exact path="/PythonProjects">
+          <PythonProjects />
+        </Route>
 
-          <Route exact path="/About">
+        <Route exact path="/Webdev">
+          <WebDev />
+        </Route>
 
-            <About />
-            <Container />
+        <Route exact path="/CommingSoon">
+          <CommingSoon />
+        </Route>
 
+        <Route path="*" >
+          <Pagenotfound />
+        </Route>
 
-          </Route>
-          <Route exact path="/Projects">
-            <Container />
-          </Route>
-          <Route exact path="/PythonProjects">
-            <PythonProjects />
-          </Route>
-          <Route exact path="/CommingSoon">
-            <CommingSoon />
-          </Route>
+      </Switch>
 
+      <Footer />
+    </div>
 
-
-        </Switch>
-
-
-        <Footer />
-      </div>
-    </Router>
   );
 }
+
 
 export default App;

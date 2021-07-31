@@ -87,11 +87,13 @@
 
 
 .moveArrow {
-    height: 270px;
+    max-width: 319px;
+    width: 30vw;
     animation-name : mymove;
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    box-shadow: 13px 15px 17px -5px rgb(29 22 22 / 36%);
   }
   
   @keyframes mymove {
@@ -101,9 +103,7 @@
 
 
 @media (max-width:1000px) {
-    .container {
-        margin: 31px 42px 30px 45px;
-    }
+
     .right-div div{
         margin-top: 87px;
     
@@ -112,6 +112,7 @@
     .Section{
 
         flex-direction:column;
+        margin: 31px 42px 30px 45px;
 
     }
         
@@ -148,8 +149,10 @@
     
  
 }
+.btn{
+    transition:0.3s;
+    box-shadow: 0px 20px 15px -4px rgba(0, 0, 0, 0.3);
+    transform:translateY(3px);
 
-.btn:hover{
-    box-shadow: 1px 20px 15px 1px rgba(0, 0, 0, 0.2);
-    transform:translateY(1px);
 }
+

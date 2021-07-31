@@ -11,8 +11,8 @@ export const Footer = () => {
             
             <div className="container color">
             <div className="footer-logo">
-                <img className src={Logofooter} alt="asdf"/> 
-                <h3>
+                <img className="" src={Logofooter} alt=""/> 
+                <h3 className="noselect">
                     TechProject
                 </h3>
 
@@ -64,18 +64,18 @@ export const Footer = () => {
                         <h4>Social</h4>
                         <div className="footer-social-icon">
                             <a href="#">
-                                <i class="fab fa-instagram fa-2x  instagram"></i>
+                                <i className="fab fa-instagram fa-2x  instagram"></i>
                             </a>
                            
                             <a href="https://github.com/RvTechiNNovate">
-                                <i class="fab fa-github fa-2x github "></i>
+                                <i className="fab fa-github fa-2x github "></i>
                             </a>
                             <a href="#About">
-                                <i class="fab fa-linkedin fa-2x "></i>
+                                <i className="fab fa-linkedin fa-2x "></i>
                             </a>
                             
                             <a href="https://www.youtube.com/channel/UCUF5U2VMi3bdHocsJYxwaJQ">
-                                <i class="fab fa-youtube fa-2x  youtube"></i>
+                                <i className="fab fa-youtube fa-2x  youtube"></i>
                             </a>
 
                         </div>

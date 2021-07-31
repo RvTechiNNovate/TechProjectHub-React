@@ -1,19 +1,18 @@
 import React from 'react'
 import "./About.css"
-// import ".src/App.css"
 
-export const About = () => {
+import "aos/dist/aos.css"
+
+export const About = (props) => {
     return (
-        <div className="bg-color" id="about">
+        <div style={{overflow:"hidden"}} data-aos="fade-right" className="bg-color" id="about">
             
             <section className="" id="about">
                 <h1 className="section-heading mb75px ">
                     <span className="header-name-icon ">
                         <i className="far fa-address-card " aria-hidden="true"></i>
                     </span>
-                    <span className="black">
-                        About
-                    </span>
+                    <span className="heading noselect"> <h2>About</h2></span>
 
                 </h1>
                 <div id="about-para">
@@ -31,6 +30,3 @@ export const About = () => {
         </div>
     )
 }
-// style="color: black"
-
-// style="text-align:right;"

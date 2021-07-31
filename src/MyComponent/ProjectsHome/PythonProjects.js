@@ -3,15 +3,16 @@ import "./All.css"
 import { Link } from 'react-router-dom'
 
 export const PythonProjects = () => {
-
-
+    function alert1() {
+        alert("Comming Soon")
+    }
 
     return (
 
 
 
         <>
-            <section id="about">
+            <section style={{backgroundColor:"aliceblue", minHeight:"50vh"}}id="">
                 <h1 className="section-heading mb75px">
                     <span className="header-name-icon">
                         <i className="far fa-address-card"></i>
@@ -45,11 +46,17 @@ export const PythonProjects = () => {
 
                 </h1>
                 <div id="about-para">
-                    <p >
-                        1. <Link to="/CommingSoon" >To DOs</Link>
-                        {/* 2. <Link href="javascript:AlertIt();">-------------</Link> */}
-
-                    </p>
+                    <ul >
+                        <li>
+                        <Link style={{textDecoration:"none"}}  onClick={()=>alert1()}>1. To Dos</Link>
+                        </li>
+                        <li>
+                        <Link style={{textDecoration:"none"}} onClick={()=>alert1()}>2. Real TIme Chat App</Link>
+                        </li>
+                        <li>
+                        <Link style={{textDecoration:"none"}} onClick={()=>alert1()}>3. -------------</Link>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </>
