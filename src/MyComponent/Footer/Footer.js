@@ -7,11 +7,10 @@ export const Footer = () => {
     return (
 
         <footer className="footer">
- 
-            
+
             <div className="container color">
             <div className="footer-logo">
-                <img className="" src={Logofooter} alt=""/> 
+                <img className="" src={Logofooter} alt=""/>
                 <h3 className="noselect">
                     TechProject
                 </h3>
@@ -22,43 +21,33 @@ export const Footer = () => {
                     <div className="footer-col">
                         <h4>Menu</h4>
                         <ul>
-                            <li><a href="">Home</a></li>
+                            
                             <li><a href="">About Us</a></li>
                             <li><a href="">All project</a></li>
-                            <li><a href="">contribute</a></li>
+                            <li><a href="">Careers</a></li>
                             <li><a href="">Contact Us</a></li>
-
                             <li><a href="">Services</a></li>
-
-
-
-
                         </ul>
-
                     </div>
+
                     <div className="footer-col">
                         <h4>Support</h4>
                         <ul>
                             <li><a href="">FAQ</a></li>
                             <li><a href="">Paid assistance</a></li>
-
-                            <li><a href="">text</a></li>
-                            <li><a href="">text</a></li>
-                            <li><a href="">text</a></li>
-
+                            <li><a href="">Contribute To Project</a></li>
                         </ul>
-
                     </div>
+
                     <div className="footer-col">
-                        <h4>Contact Us</h4>
+                        <h4>Contribute</h4>
                         <ul>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">text</a></li>
-                            <li><a href="">text</a></li>
-                           
+                            <li><a href="">Write Article</a></li>
+                            <li><a href="">Write Interview experience</a></li>
+                            <li><a href="">Videos</a></li>
                         </ul>
-
                     </div>
+                    
                     
                     <div className="footer-col">
                         <h4>Social</h4>
@@ -92,3 +81,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+

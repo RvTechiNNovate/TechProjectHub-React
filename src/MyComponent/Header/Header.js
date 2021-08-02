@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import "./Header.css"
 import logo from "./logofinal.png"
-// import Scroll from "react-scroll"
-
 
 import {
 
@@ -15,7 +13,7 @@ import {
 
 
 
-export const Header = () => {
+export const Header = (header) => {
 
 	const [navbar, setnavbar] = useState(false)
 
@@ -32,6 +30,7 @@ export const Header = () => {
 	window.addEventListener("scroll", changebackground)
 
 	const navstyle = navbar ? "menu-bg navbar activenav  navbar-expand-lg fixed-top text-center" : " navbar navbar-expand-lg fixed-top text-center"
+	const scrolltop3 = navbar ? "scrolltotop" : "scrolltopnone"
 	// console.log(navstyle)
 	return (
 		<>
@@ -96,4 +95,29 @@ export const Header = () => {
 		</>
 
 	)
+}
+
+export const Scrolltop = () => {
+	const [scrtop, setscrtop] = useState(false)
+
+	const changebackground = () => {
+		if (window.scrollY >500) {
+			setscrtop(true)
+		}
+		else {
+			setscrtop(false)
+		}
+
+	}
+
+	window.addEventListener("scroll", changebackground)
+
+	const scrolltop = scrtop ? "scrolltotop" : "scrolltotop hide"
+
+    return (
+		
+       
+            <button className={scrolltop} style={{border:"none", backgroundColor:"transparent"}} type="button" onClick={()=>(window.scrollTo(0,0))}> <i className="red fas fa-arrow-alt-circle-up fa-2x"></i></button>
+ 
+    )
 }

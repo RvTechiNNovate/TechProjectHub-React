@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import imgbg from "./bg-pattern.png"
 
 
 
@@ -20,17 +21,23 @@ export const Hero = () => {
 
             <div className="herobg bg-img">
                 <div className="blurehero">
-                    <div  className=' noselect container heading-animated' id="welcome" name="welcome">
+                    <div className=' noselect container heading-animated' id="welcome" name="welcome">
                         <p  >
                             <span>Welcome to the World of <br /></span><span className="span-typed-text">{text} </span><span><Cursor /> Project</span>
                             <br /><br /> <button className="btn btn-primary btn-round" type="submit">Get Started</button>
                         </p>
 
-                       
+
+                    </div>
+                    <div className="bg-pattern-effect">
+                        <img src={imgbg} alt="" />
                     </div>
                 </div>
 
+
             </div>
+
+
         </>
 
     )

@@ -1,5 +1,6 @@
-import { Header } from "./MyComponent/Header/Header"
+import { Header  , Scrolltop} from "./MyComponent/Header/Header"
 import { Footer } from "./MyComponent/Footer/Footer";
+
 import { Container } from "./MyComponent/ProjectsHome/Container"
 import { About } from "./MyComponent/About/About"
 import { PythonProjects } from "./MyComponent/ProjectsHome/PythonProjects"
@@ -11,7 +12,7 @@ import { Hero } from "./MyComponent/Hero/Hero";
 import { Pagenotfound } from "./MyComponent/Welcome/Pagenotfound";
 import React, { useEffect } from 'react'
 import { Switch, Route } from "react-router-dom";
-import Aos from "aos"
+import Aos from "aos";
 
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
         </Route>
 
       </Switch>
-
+      <Scrolltop/>
       <Footer />
     </div>
 

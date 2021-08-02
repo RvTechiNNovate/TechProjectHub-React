@@ -198,7 +198,7 @@
 
 .navbar.activenav{
   background:rgba(98, 35, 214, 0.904);
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 
@@ -215,3 +215,25 @@
   }
 }
 
+
+
+.scrolltotop{
+  position: fixed;
+  cursor: pointer;
+  z-index: 1023;
+  right: 15px;
+  bottom: 60px;
+  border-radius: 50%;  
+
+
+}
+
+.scrolltotop i{
+  color:red;
+  
+}
+
+.hide{
+  transition: 0.5;
+  display: none;
+}
