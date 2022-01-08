@@ -1,4 +1,4 @@
-import { Header  , Scrolltop} from "./MyComponent/Header/Header"
+import { Header, Scrolltop } from "./MyComponent/Header/Header"
 import { Footer } from "./MyComponent/Footer/Footer";
 
 import { Container } from "./MyComponent/ProjectsHome/Container"
@@ -23,13 +23,14 @@ function App() {
 
   return (
 
-    <div className="">
 
-      <Header />
+    <React.Fragment>
+     <Header />
       <Switch>
         <Route exact path="/" render={() => {
           return (
             <>
+           <Header />
               <Hero />
               <Container />
               <About />
@@ -64,9 +65,9 @@ function App() {
         </Route>
 
       </Switch>
-      <Scrolltop/>
+      <Scrolltop />
       <Footer />
-    </div>
+    </React.Fragment>
 
   );
 }

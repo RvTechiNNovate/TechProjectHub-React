@@ -13,6 +13,9 @@
 	font-weight: 400;
 	
 }
+.scpad{
+	scroll-margin-top: 100px;
+}
 
 .section-heading span{
 	font-size: 30px;

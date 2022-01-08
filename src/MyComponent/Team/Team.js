@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Team.css"
-import img from "./rashmi.jpeg"
+// import img from "./rashmi.jpeg"
 import img2 from "./mine.jpeg"
 
 
@@ -19,7 +19,7 @@ export const Team = () => {
                         <div className="card">
                             <div className="content">
                                 <div className="imgBox">
-                                    <img className="imgcard" src={img} alt="" />
+                                    <img className="imgcard" src={img2} alt="" />
                                 </div>
                                 <div className="Name">
                                     <h3>Ritesh Srivastva<br /> <span>Data Analyst</span></h3>
@@ -61,7 +61,7 @@ export const Team = () => {
                         <div className="card">
                             <div className="content">
                                 <div className="imgBox">
-                                    <img className="imgcard" src={img} alt="" />
+                                    <img className="imgcard" src={img2} alt="" />
                                 </div>
                                 <div className="Name">
                                     <h3>Anurag Kumar<br /> <span>App Developer</span></h3>

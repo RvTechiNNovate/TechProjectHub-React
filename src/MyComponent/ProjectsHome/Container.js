@@ -15,7 +15,9 @@ import "aos/dist/aos.css"
 
 export const Container = () => {
     return (
-
+        <section id="project">
+            
+        
         <div data-aos="fade-up" id="project" >
             <h1 className="section-heading mb75px">
                 <span className="header-name-icon">
@@ -66,7 +68,7 @@ export const Container = () => {
                 </div>
                 <div className="project-image-container">
                     <img alt="" src={img4} />
-                    <Link to="./Webdev">
+                    <Link to="./Webdev/#webdev">
                         <div className="project-detail">
                             {/* <p>
                                 "Web Development Project"
@@ -117,5 +119,6 @@ export const Container = () => {
                 </div>
             </div>
         </div>
+        </section>
     )
 }

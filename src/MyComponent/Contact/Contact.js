@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact_img from "./Contact_img.png"
 import "./Contact.css"
-import "aos/dist/aos.css"
+// import "aos/dist/aos.css"
 
 export const Contact = (props) => {
     function getFormData(e){
@@ -10,7 +10,7 @@ export const Contact = (props) => {
     }
 
     return (
-        <section  data-aos="fade-up" className="container Section" id="contact">
+        <section  id="contact"  data-aos="fade-right" className="scpad container Section">
 
             <div  className="left-div">
 

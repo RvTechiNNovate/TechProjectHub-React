@@ -10,9 +10,11 @@ export const WebDev = () => {
     return (
 
 
-
-        <>
-            <section style={{backgroundColor:"aliceblue", minHeight:"50vh"}}id="">
+        <section id="webdev">
+            <div style={{height:"80px",width:"100%", background: "rgba(98, 35, 214, 0.904)"}}>
+    
+            </div>
+            <section style={{ backgroundColor: "aliceblue", minHeight: "50vh" }} id="">
                 <h1 className="section-heading mb75px">
                     <span className="header-name-icon">
                         <i className="far fa-address-card"></i>
@@ -48,17 +50,17 @@ export const WebDev = () => {
                 <div id="about-para">
                     <ul >
                         <li>
-                        <Link style={{textDecoration:"none"}}  onClick={()=>alert1()}>1. To Dos</Link>
+                            <Link style={{ textDecoration: "none" }} onClick={() => alert1()}>1. To Dos</Link>
                         </li>
                         <li>
-                        <Link style={{textDecoration:"none"}} onClick={()=>alert1()}>2. Real TIme Chat App</Link>
+                            <Link style={{ textDecoration: "none" }} onClick={() => alert1()}>2. Real TIme Chat App</Link>
                         </li>
                         <li>
-                        <Link style={{textDecoration:"none"}} onClick={()=>alert1()}>3. -------------</Link>
+                            <Link style={{ textDecoration: "none" }} onClick={() => alert1()}>3. -------------</Link>
                         </li>
                     </ul>
                 </div>
             </section>
-        </>
+        </section>
     )
 }
